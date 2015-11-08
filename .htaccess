@@ -1,0 +1,5 @@
+Options -Indexes
+
+RailsEnv development
+PassengerEnabled on
+PassengerAppRoot /home/ivrsn/experiments/ruby/wakeup_call
