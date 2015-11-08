@@ -1,0 +1,24 @@
+{
+  "name": "ivrsn-website",
+  "version": "1.0.0",
+  "description": "Dave Iverson's website/portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pangolingo/ivrsn-website.git"
+  },
+  "author": "Dave Iverson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pangolingo/ivrsn-website/issues"
+  },
+  "homepage": "https://github.com/pangolingo/ivrsn-website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-rename": "^1.2.2"
+  }
+}
