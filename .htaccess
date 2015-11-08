@@ -1,8 +1,6 @@
 Options -Indexes
 
-RailsEnv development
-PassengerEnabled on
-PassengerAppRoot /home/ivrsn/experiments/ruby/wakeup_call
+
 
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/html
@@ -20,3 +18,9 @@ AddOutputFilterByType DEFLATE application/x-javascript
   ExpiresByType text/html "access plus 60 minutes"
   ExpiresByType text/xml "access plus 60 minutes"
 </IfModule>
+
+<IfModule mod_passenger.c>
+	RailsEnv development
+	PassengerEnabled on
+	PassengerAppRoot /home/ivrsn/experiments/ruby/wakeup_call
+ </IfModule>
