@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     // autoprefixer = require('gulp-autoprefixer'),
 
 gulp.task('build', function() {
-  return gulp.src('css/*.css')
+  return gulp.src(['!css/*.min.css','css/*.css'])
     .pipe(minifycss({compatibility: 'ie8'}))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css'));
