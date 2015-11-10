@@ -392,7 +392,9 @@ section.red a:active {
 }
 .projectScreen img {
 	width: 100%;
-	border: 2px solid #444942;
+}
+.projectScreen .image--dark {
+	border: 1px solid #444942;
 }
 
 
