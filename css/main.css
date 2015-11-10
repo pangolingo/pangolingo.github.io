@@ -383,9 +383,9 @@ section.red a:active {
 
 	margin: 1.6em auto;
 
-	-webkit-box-shadow: 5px 5px 0px #5b0d18;
-    -moz-box-shadow:    5px 5px 0px #5b0d18;
-	box-shadow:         5px 5px 0px #5b0d18;
+	-webkit-box-shadow: 5px 5px 4px #5b0d18;
+    -moz-box-shadow:    5px 5px 4px #5b0d18;
+	box-shadow:         5px 5px 4px #5b0d18;
 
 	border-top: 1px solid #444;
 	border-left: 1px solid #444;
@@ -402,6 +402,10 @@ section.red a:active {
 	border-radius: 50%;
 }
 
+.fine-print {
+	font-style: italic;
+	font-size: 80%;
+}
 
 
 /* ==========================================================================
