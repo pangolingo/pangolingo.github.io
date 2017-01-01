@@ -10,3 +10,5 @@
 # ignore mac files
 .DS_Store
 
+# ignore installed npm packages
+node_modules
