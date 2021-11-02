@@ -270,39 +270,30 @@ header h3 {
   color: #38040b;
 }
 
-
 header h1 {
-  font-size: 7.2rem;
-  margin-bottom: 0.6em;
-  letter-spacing: 0.3em;
-  margin-right: -0.3em;
-
-
-}
-header h2 {
   font-size: 3.6rem;
   margin-top: 0.5em;
 
 }
-header h2 .sub {
+header h1 .sub {
   display: block;
 }
-header h2 .sub1 {
+header h1 .sub1 {
   font-size: 1.4rem;
 }
-header h2 .sub2 {
+header h1 .sub2 {
   margin: 0.6em 0 0.6em;
 
   letter-spacing: 0.2em;
   margin-right: -0.2em;
 }
-header h2 .sub3 {
+header h1 .sub3 {
   font-size: 2rem
 }
 
 
 header .logo {
-  width: 7em
+  width: 7em;
 }
 
 nav {
