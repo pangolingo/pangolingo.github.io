@@ -4,9 +4,14 @@ var gulp = require('gulp'),
     // sass = require('gulp-ruby-sass'),
     // autoprefixer = require('gulp-autoprefixer'),
 
-gulp.task('build', function() {
-  return gulp.src(['!css/*.min.css','css/*.css'])
+function build() {
+  return gulp.src(['css/*.css', '!css/*.min.css'])
     .pipe(minifycss({compatibility: 'ie8'}))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('css'));
+}
+gulp.task('build', build);
+
+gulp.task('watch', function() {
+  return gulp.watch(['css/*.css', '!css/*.min.css'], build)
 });
