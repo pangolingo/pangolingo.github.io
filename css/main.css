@@ -18,7 +18,6 @@ textarea {
   color: #222;
 }
 
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate.
@@ -74,75 +73,59 @@ textarea {
   resize: vertical;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 html {
-      font-size: 62.5%;
-      height: 100%;
-
-    }
+  font-size: 62.5%;
+  height: 100%;
+}
 body {
-  background: #C0143C url(../img/bg_tile.jpg) repeat fixed left top;
+  background: #c0143c url(../img/bg_tile.jpg) repeat fixed left top;
   font-size: 1.6rem;
   line-height: 1.6em;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
-
-
-  
-  /*font-family: 'Old Standard TT', serif;
-  font-size: 1.6rem;
-  line-height: 1.6em;*/
-
-
-  line-height: 1.6em;
-  font-family: "PT Sans", sans-serif;
-
-
-  color: #E5DFD9;
-
   color: #38040b;
-
-
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 1.6em 0;
   padding: 0;
-  color: #fff260;
+  color: hsl(55deg 100% 69%);
   text-transform: uppercase;
   font-family: 'Old Standard TT', serif;
   line-height: 1em;
 }
 
-
-
 #container {
-  /*max-width: 600px;*/
   max-width: 40em;
   min-height: 100%;
   padding-top: 2em;
-  background-color: #f6dd3b;
-
+  background-color: hsl(52deg 100% 60%);
   margin: 0 auto;
-
+  box-shadow: 0px 0px 6.3px rgb(0 0 0 / 11%), 0px 0px 15.8px rgb(0 0 0 / 16%),
+    0px 0px 49px rgb(0 0 0 / 22%);
 }
 
-
-header, footer, section {
+header,
+footer,
+section {
   padding: 1.6em 3%;
 }
 
 section {
   padding-top: 6em;
   padding-bottom: 6em;
-
 }
 @media screen and (max-width: 800px) {
   section {
@@ -151,9 +134,8 @@ section {
   }
 }
 
-
-
-p, ul {
+p,
+ul {
   margin: 1.6em 0;
 }
 
@@ -162,28 +144,23 @@ p {
 }
 
 h3 {
-  font-size: 3.6rem;
-  letter-spacing: 0.2em;
-  margin-right: -0.2em;
+  font-size: 2.6rem;
+  letter-spacing: 0.1em;
   margin-bottom: 0.5em;
-  
-
-  
 }
 h3 .border,
 h4 .border {
   display: block;
-  border-bottom: 1px solid #fff260;
+  border-bottom: 1px solid hsl(55deg 100% 69%);
   width: 20%;
   margin: 0 auto;
   margin-top: 0.5em;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5em;
 }
-
 
 .work h3 {
   margin-top: 0.5em;
@@ -202,13 +179,12 @@ a:link {
   color: #0000ee;
 }
 a:visited {
-  color: #581C90;
+  color: #581c90;
 }
 a:hover,
 a:active {
   color: #360b5d;
 }
-
 
 .listColumns {
   overflow: hidden;
@@ -258,14 +234,17 @@ a:active {
   display: inline-block;
 }
 
-
-
 header {
   overflow: hidden;
+  min-height: 61.8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-header h1, 
-header h2, 
+header h1,
+header h2,
 header h3 {
   color: #38040b;
 }
@@ -273,7 +252,6 @@ header h3 {
 header h1 {
   font-size: 3.6rem;
   margin-top: 0.5em;
-
 }
 header h1 .sub {
   display: block;
@@ -288,9 +266,8 @@ header h1 .sub2 {
   margin-right: -0.2em;
 }
 header h1 .sub3 {
-  font-size: 2rem
+  font-size: 2rem;
 }
-
 
 header .logo {
   width: 7em;
@@ -314,55 +291,55 @@ nav ul li:first-child {
   margin-left: 0;
 }
 
-
 section {
   overflow: hidden;
 }
-
 
 footer {
   font-family: 'Old Standard TT', serif;
   font-style: italic;
 }
 
-
-
-section.pink {
-  background-color: #c0143c;
-  color: #ffec1d;
-}
 section.red {
-  background-color: #7D091E;
-  color: #fadde3;
-
-
-  background-color: #7D091E;
-  color: #ffec1d;
-
+  background-color: #7d091e;
+  color: hsl(55deg 100% 90%);
 
   background: #c0143c; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #c0143c 0%, #7d091e 66%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#c0143c), color-stop(66%,#7d091e)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #c0143c 0%,#7d091e 66%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #c0143c 0%,#7d091e 66%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #c0143c 0%,#7d091e 66%); /* IE10+ */
-background: linear-gradient(135deg, #c0143c 0%,#7d091e 66%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0143c', endColorstr='#7d091e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
+  background: -moz-linear-gradient(
+    -45deg,
+    #c0143c 0%,
+    #7d091e 66%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%, #c0143c),
+    color-stop(66%, #7d091e)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    -45deg,
+    #c0143c 0%,
+    #7d091e 66%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    -45deg,
+    #c0143c 0%,
+    #7d091e 66%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #c0143c 0%, #7d091e 66%); /* IE10+ */
+  background: linear-gradient(135deg, #c0143c 0%, #7d091e 66%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0143c', endColorstr='#7d091e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-
 
 section.red a:link,
 section.red a:visited {
-  color: #fff260;
+  color: hsl(55deg 100% 69%);
 }
 section.red a:hover,
 section.red a:active {
-  color: #b18a07;
+  color: hsl(55deg 55% 69%);
 }
-
-
 
 .projectScreen {
   width: 95%;
@@ -374,9 +351,7 @@ section.red a:active {
 
   margin: 1.6em auto;
 
-  -webkit-box-shadow: 5px 5px 4px #5b0d18;
-    -moz-box-shadow:    5px 5px 4px #5b0d18;
-  box-shadow:         5px 5px 4px #5b0d18;
+  box-shadow: 5px 5px 4px #5b0d18;
 
   border-top: 1px solid #444;
   border-left: 1px solid #444;
@@ -387,7 +362,6 @@ section.red a:active {
 .projectScreen .image--dark {
   border: 1px solid #444942;
 }
-
 
 .photoPortrait {
   width: auto;
@@ -400,11 +374,9 @@ section.red a:active {
   font-size: 80%;
 }
 
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
 
 /*
  * Clearfix: contain floats
@@ -420,7 +392,7 @@ section.red a:active {
 
 .clearfix:before,
 .clearfix:after {
-  content: " "; /* 1 */
+  content: ' '; /* 1 */
   display: table; /* 2 */
 }
 
@@ -448,7 +420,7 @@ section.red a:active {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-     only screen and (min-resolution: 144dpi) {
+  only screen and (min-resolution: 144dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -461,7 +433,7 @@ section.red a:active {
   * {
     background: transparent !important;
     color: #000 !important; /* Black prints faster: h5bp.com/s */
-    box-shadow:none !important;
+    box-shadow: none !important;
     text-shadow: none !important;
   }
 
@@ -471,11 +443,11 @@ section.red a:active {
   }
 
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
 
   /*
@@ -483,9 +455,9 @@ section.red a:active {
    */
 
   .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
+  a[href^='javascript:']:after,
+  a[href^='#']:after {
+    content: '';
   }
 
   pre,

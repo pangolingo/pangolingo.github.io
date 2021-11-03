@@ -12,3 +12,5 @@
 
 # ignore installed npm packages
 node_modules
+
+.vscode
