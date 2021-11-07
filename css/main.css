@@ -204,6 +204,33 @@ a:active {
   margin-right: 4%;
 }
 
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  justify-content: center;
+}
+.project-skill {
+  /* display: inline; */
+  /* background-color: hsl(52deg 100% 60%); */
+  background-image: linear-gradient(
+    130deg,
+    hsl(52deg 100% 60%) 0%,
+    hsl(52deg 100% 70%) 30%,
+    hsl(52deg 100% 50%) 74%
+  );
+  color: #38040b;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 0 5px 5px 0;
+  box-shadow: 0px 0px 6.3px rgb(0 0 0 / 11%), 0px 0px 15.8px rgb(0 0 0 / 16%),
+    0px 0px 49px rgb(0 0 0 / 22%);
+  font-size: 1.4rem;
+}
+
 @media screen and (max-width: 450px) {
   .listColumns ul,
   .listColumns ul:first-child {
@@ -341,87 +368,10 @@ section.red a:active {
   color: hsl(55deg 55% 69%);
 }
 
-.projectScreen {
-  width: 95%;
-  background-color: #000;
-  border-radius: 10px;
-  padding: 2.7%;
-  padding-bottom: 6%;
-  padding-top: 3.3%;
-
-  margin: 1.6em auto;
-
-  box-shadow: 5px 5px 4px #5b0d18;
-
-  border-top: 1px solid #444;
-  border-left: 1px solid #444;
-}
-.projectScreen img {
-  width: 100%;
-}
-.projectScreen .image--dark {
-  border: 1px solid #444942;
-}
-
 .photoPortrait {
   width: auto;
   max-width: 30%;
   border-radius: 50%;
-}
-
-.fine-print {
-  font-style: italic;
-  font-size: 80%;
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-  content: ' '; /* 1 */
-  display: table; /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-  *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (min-resolution: 144dpi) {
-  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
