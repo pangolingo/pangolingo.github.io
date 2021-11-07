@@ -187,11 +187,11 @@ a:active {
 }
 
 .listColumns {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 .listColumns ul {
   display: block;
-  float: left;
   width: 48%;
   text-align: left;
   margin-left: 0;
@@ -201,7 +201,23 @@ a:active {
 }
 .listColumns ul:first-child {
   text-align: right;
-  margin-right: 4%;
+}
+
+@media screen and (max-width: 450px) {
+  .listColumns {
+    display: block;
+  }
+  .listColumns ul,
+  .listColumns ul:first-child {
+    text-align: left;
+    width: auto;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .listColumns ul:first-child {
+    margin-bottom: 0;
+  }
 }
 
 .project-skills {
@@ -229,19 +245,6 @@ a:active {
   box-shadow: 0px 0px 6.3px rgb(0 0 0 / 11%), 0px 0px 15.8px rgb(0 0 0 / 16%),
     0px 0px 49px rgb(0 0 0 / 22%);
   font-size: 1.4rem;
-}
-
-@media screen and (max-width: 450px) {
-  .listColumns ul,
-  .listColumns ul:first-child {
-    text-align: center;
-    float: none;
-    width: auto;
-    margin-right: 0;
-  }
-  .listColumns ul:first-child {
-    margin-bottom: 0;
-  }
 }
 
 .alignedList {
